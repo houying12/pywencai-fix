@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywencai"
+version = "0.13.1.post1"
+description = "获取同花顺问财数据 —— 2026 接口修复版，纯 Python 指纹，无需 Node.js"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "houying12" }]
+keywords = ["iwencai", "wencai", "同花顺", "问财", "quant", "stock", "ths"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "requests",
+    "pandas>=1.5.0",
+    "pydash>=7.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/houying12/pywencai-fix"
+Source = "https://github.com/houying12/pywencai-fix"
+Issues = "https://github.com/houying12/pywencai-fix/issues"
+
+[tool.setuptools.packages.find]
+include = ["pywencai*"]
